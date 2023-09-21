@@ -17,7 +17,7 @@ example_use_cases:
   tactics:
   - Discovery
 - name: Add a login item to the current user
-  description: An attacker can use defaults to add a login hook in attempt to gain persistence. This command requires root privileges.
+  description: An attacker can use defaults to add a login hook in attempt to gain persistence. This command requires root privileges. Login hooks stopped working in macOS 13+.
   code: sudo defaults write /Library/Preferences/com.apple.loginwindow LoginHook gain_persistence.sh
   tactics:
   - Persistence
